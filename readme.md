@@ -21,7 +21,7 @@ ________________________________________________________________________________
 Installation
 
 1) Clone the Repository
-    git clone https://github.com/yourusername/edtech-integration-hub.git
+    git@github.com:rohitrai003/EdTech-Integration-Hub.git
 3) cd edtech-integration-hub
 4) Install Dependencies
 5) Install the required Node.js packages:
@@ -65,7 +65,8 @@ function reactivateTool(uint256 _toolId) public;
 
 Checking User Access
 Anyone can verify whether a user has access to a specific tool using the hasAccess function.
-..................................
+
+
 function hasAccess(uint256 _toolId, address _user) public view returns (bool);
 
 ______________________________________________________________________________________________________________
