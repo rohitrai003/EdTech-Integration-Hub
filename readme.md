@@ -1,74 +1,57 @@
-EdTech Integration Hub
-
-Overview
-The EdTech Integration Hub is a blockchain-based platform designed to facilitate the integration and management of various educational technology (EdTech) tools. By leveraging the security and transparency of blockchain technology, this platform provides a decentralized solution for managing tool access, recording interactions, and ensuring secure data exchanges between educational institutions, teachers, and students.
-______________________________________________________________________________________________________________
-Features
-  Tool Registration: EdTech providers can register their tools on the blockchain, ensuring a secure and immutable record of their offerings.
-  Access Control: Tool owners can grant or revoke access to their tools for specific users, such as educators or students, directly on the blockchain.
-  Tool Management: Owners can deactivate or reactivate their tools at any time, providing flexible control over tool availability.
-  User Verification: A built-in mechanism to verify whether a user has access to a specific tool.
-______________________________________________________________________________________________________________
-Getting Started
-  Prerequisites
-    To deploy and interact with the EdTech Integration Hub smart contract, you'll need:
-      1) Solidity: Version 0.8.0 or higher
-      2) Node.js: Version 12.x or higher
-      3) Truffle or Hardhat: For smart contract deployment and testing
-      4) Ganache: For local Ethereum blockchain testing
-      5) MetaMask: For interacting with the deployed contract
-______________________________________________________________________________________________________________
-Installation
-
-1) Clone the Repository
-    git@github.com:rohitrai003/EdTech-Integration-Hub.git
-3) cd edtech-integration-hub
-4) Install Dependencies
-5) Install the required Node.js packages:
-    npm install
-6) Compile the Smart Contract
-
-7) Compile the Solidity smart contract using Truffle or Hardhat:
-    truffle compile
-    # or
-    npx hardhat compile
-
-8) Deploy the Contract
-
-9) Deploy the smart contract to your local blockchain:
-    truffle migrate
-    # or
-    npx hardhat run scripts/deploy.js --network localhost
-_______________________________________________________________________________________________________________
-Interact with the Contract
-You can interact with the deployed contract using a frontend application, command-line tools, or directly through your preferred blockchain interface (e.g., Remix or MetaMask).
-______________________________________________________________________________________________________________
-Usage
-Registering a Tool
-Tool owners can register their tools on the platform by invoking the registerTool function. This requires specifying the tool's name and a brief description.
-
-function registerTool(string memory _name, string memory _description) public;
-Granting and Revoking Access
-Tool owners can grant or revoke access to their tools for specific users.
+![image](https://github.com/user-attachments/assets/31af6246-6648-4e61-86a9-236961a0e499)
 
 
-function grantAccess(uint256 _toolId, address _user) public;
-function revokeAccess(uint256 _toolId, address _user) public;
-Managing Tool Availability
-Tool owners can deactivate or reactivate their tools as needed.
+<h1>EdTech Integration Hub</h1>
+<h3>Vision</h3>
+<p>The EdTech Integration Hub aims to revolutionize the educational landscape by providing a secure, decentralized platform for integrating and managing EdTech tools. Through blockchain technology, the platform ensures transparent access control, fosters trust, and enhances collaboration between educators, students, and institutions.</p>
 
+<h3>Flowchart</h3>
++---------------------+     +---------------------+ <br/>
+|  Register Tool      |      |  Grant/Revoke Access| </br>
+|                     |      |                     |</br>
++---------+-----------+      +----------+----------+</br>
+          |                           |</br>
+          v                           v</br>
++---------+-----------+      +----------+----------+</br>
+|  Store on Blockchain|      |  Check User Access   |</br>
++---------------------+      +---------------------+</br>
+          |                           |</br>
+          v                           v</br>
++---------------------+      +---------------------+</br>
+|  Manage Tools       |      |  Secure Data Exchange|</br>
++---------------------+      +---------------------+</br>
 
+Contract Address <br/>
+The smart contract for the EdTech Integration Hub is deployed at the following address on the Ethereum blockchain:<br/>
 
-function deactivateTool(uint256 _toolId) public;
-function reactivateTool(uint256 _toolId) public;
+Contract Address: 0x7ef1052feb6b3ab0ed20ebe8f64667323915b9ee7a461ec70194dc5ef4023ff0<br/>
 
+Features<br/>
+  1) Tool Registration: Securely register EdTech tools on the blockchain.<br/>
+  2) Access Control: Grant or revoke user access to specific tools.<br/>
+  3) Tool Management: Deactivate or reactivate tools as needed.<br/>
+  4) User Verification: Verify if a user has access to a tool.<br/>
 
-Checking User Access
-Anyone can verify whether a user has access to a specific tool using the hasAccess function.
-
-
-function hasAccess(uint256 _toolId, address _user) public view returns (bool);
-
-______________________________________________________________________________________________________________
-Contributing
-Contributions are welcome! Please fork the repository and submit a pull request with your improvements. For major changes, please open an issue to discuss what you would like to change.
+Future Scope<br/>
+1) Payment Integration: Enable micropayments for tool usage.<br/>
+2) Role-Based Access: Implement advanced role-based access control for institutions.<br/>
+3) Inter-Tool Communication: Facilitate communication between different EdTech tools.<br/>
+4) Cross-Chain Compatibility: Expand support for multiple blockchain networks.<br/>
+5) Analytics Dashboard: Provide insights on tool usage and access patterns.<br/>
+<br/><br/>
+Getting Started <br/>
+    Prerequisites<br/>
+      1) Solidity (v0.8.0+)<br/>
+      2) Node.js (v12.x+)<br/>
+      3) Truffle or Hardhat<br/>
+      4) Ganache (for local testing)<br/>
+      5) MetaMask (for interaction)<br/>
+    Installation<br/>
+      1) Clone the repository:<br/>
+          git clone git@github.com:rohitrai003/EdTech-Integration-Hub.git<br/>
+          cd edtech-integration-hub<br/>
+      2) Install dependencies<br/>
+          npm install<br/>
+      3) Compile and deploy the contract:<br/>
+          truffle compile<br/>
+          truffle migrate<br/>
