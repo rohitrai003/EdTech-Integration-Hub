@@ -28,7 +28,7 @@
 Contract Address <br/>
 The smart contract for the EdTech Integration Hub is deployed at the following address on the Ethereum blockchain:<br/>
 
-<h3>Contract Address</h3>:0xF4337eca1e4200b30e9Da7b5A80862F8CB8174AF<br/>
+<h3>Contract Address:</h3>0xF4337eca1e4200b30e9Da7b5A80862F8CB8174AF<br/>
 
 
 
