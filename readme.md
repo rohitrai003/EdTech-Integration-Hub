@@ -1,4 +1,5 @@
 EdTech Integration Hub
+
 Overview
 The EdTech Integration Hub is a blockchain-based platform designed to facilitate the integration and management of various educational technology (EdTech) tools. By leveraging the security and transparency of blockchain technology, this platform provides a decentralized solution for managing tool access, recording interactions, and ensuring secure data exchanges between educational institutions, teachers, and students.
 ______________________________________________________________________________________________________________
@@ -49,16 +50,19 @@ Tool owners can register their tools on the platform by invoking the registerToo
 function registerTool(string memory _name, string memory _description) public;
 Granting and Revoking Access
 Tool owners can grant or revoke access to their tools for specific users.
-....................................
+
+
 function grantAccess(uint256 _toolId, address _user) public;
 function revokeAccess(uint256 _toolId, address _user) public;
 Managing Tool Availability
 Tool owners can deactivate or reactivate their tools as needed.
-...................................
+
+
 
 function deactivateTool(uint256 _toolId) public;
 function reactivateTool(uint256 _toolId) public;
-...................................
+
+
 Checking User Access
 Anyone can verify whether a user has access to a specific tool using the hasAccess function.
 ..................................
