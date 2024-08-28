@@ -1,0 +1,72 @@
+.registerview {
+  margin: 10px 20px;
+  width: 80%;
+}
+
+.registerview .connectbutton {
+  height: 40px;
+  border: none;
+  padding: 10px 30px;
+  background-color: var(--purpleColor);
+  font-family: var(--primaryFont);
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.registerview .connect {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.registerview .connect {
+  color: green;
+}
+.registerview h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.registerview .connectbutton:hover {
+  transform: scale(1.05);
+  background-color: #ebdef0;
+  transition: 0.3s all ease-in-out;
+}
+
+.registerview .text-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.registerview .text-input input {
+  height: 30px;
+  background-color: #f4f6f6;
+  border: none;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.registerview .text-input input:focus {
+  outline: none;
+}
+
+.registerview form button {
+  width: 100%;
+  margin-top: 20px;
+  height: 40px;
+  font-family: var(--primaryFont);
+  cursor: pointer;
+  background-color: #e74c3c;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s all ease-in-out;
+}
+
+.registerview form button:hover {
+  transition: 0.3s all ease-in-out;
+  transform: scale(1.05);
+}

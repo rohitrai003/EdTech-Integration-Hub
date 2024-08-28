@@ -1,0 +1,50 @@
+.accessview {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  width: 80%;
+  margin-top: 70px;
+  margin-left: 30px;
+}
+
+.accessview h2 {
+  margin-bottom: 20px;
+}
+
+.accessview .text-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.accessview .text-input input {
+  height: 30px;
+  background-color: #f4f6f6;
+  border: none;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.accessview .text-input input:focus {
+  outline: none;
+}
+
+.accessview form button {
+  width: 100%;
+  margin-top: 20px;
+  height: 40px;
+  font-family: var(--primaryFont);
+  cursor: pointer;
+  background-color: #239b56;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s all ease-in-out;
+}
+
+.accessview form button:hover {
+  transform: scale(1.05);
+  transition: 0.3s all ease-in-out;
+}

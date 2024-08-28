@@ -1,0 +1,36 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  font-family: var(--primaryFont);
+  background-color: #17202a;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  align-self: center;
+  padding: 20px 0px;
+  background-color: #a6f3fa;
+  width: 50%;
+  height: 90%;
+  border-radius: 30px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.line {
+  width: 3px;
+  height: 100%;
+  background-color: #17202a;
+  margin: 0px 30px;
+}
